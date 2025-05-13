@@ -27,6 +27,8 @@ RUN apt-get update && apt-get install -y \
     libffi-dev \
     libssl-dev
 
+
+RUN pip install --upgrade pip
 # 작업 디렉토리 설정
 WORKDIR /app
 

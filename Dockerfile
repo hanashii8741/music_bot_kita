@@ -34,7 +34,7 @@ WORKDIR /app
 COPY requirements.txt .
 
 # pip 업그레이드 및 의존성 설치
-RUN pip install --upgrade pip && pip install -r requirements.txt
+RUN pip install --upgrade pip && pip install --no-cache-dir -r requirements.txt
 
 # 애플리케이션 복사
 COPY . .

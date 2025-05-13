@@ -13,7 +13,19 @@ RUN apt-get update && apt-get install -y \
     zlib1g-dev \
     libjpeg-dev \
     libpng-dev \
-    libpq-dev
+    libpq-dev \
+    libncurses5-dev \
+    libreadline-dev \
+    libbz2-dev \
+    libsqlite3-dev \
+    wget \
+    curl \
+    llvm \
+    tk-dev \
+    libncursesw5-dev \
+    liblzma-dev \
+    libffi-dev \
+    libssl-dev
 
 # 작업 디렉토리 설정
 WORKDIR /app
